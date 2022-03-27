@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
                         ArrayList<ModelClass.data>data = response.body().getData;
 
 
-                        for (ModelClass.data data1 : data){
-                            Log.e(TAG, "Response Code :"+data1.getClass());
-                        }
+                        /*for (ModelClass.data data1 : data){
+                            //Log.e(TAG, "Response Code :"+data1.getClass());
+                        }*/
                     }
 
                     @Override
