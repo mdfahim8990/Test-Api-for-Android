@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class ModelClass {
 
-    public ArrayList<ModelClass.data> getData;
+    /*public ArrayList<ModelClass.data> getData;*/
     String page;
     String per_page;
     String total;
     String total_pages;
 
-    ArrayList<data>data;
+    public ArrayList<data>data;
 
     class data {
 
