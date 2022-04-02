@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ModelClass {
 
-    public ArrayList<ModelClass.data> getData;
+
     /*public ArrayList<ModelClass.data> getData;*/
     String page;
     String per_page;
