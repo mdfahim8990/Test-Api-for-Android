@@ -43,15 +43,18 @@ public class MainActivity extends AppCompatActivity {
                 call.enqueue(new Callback<ModelClass>() {
                     @Override
                     public void onResponse(Call<ModelClass> call, Response<ModelClass> response) {
-                        Log.e(TAG, "Response Code :"+response.code());
+                        Log.e(TAG, "Response Body :"+response.body().data.get(0).id);
+                        Log.e(TAG, "Response Body :"+response.body().data.get(0).email);
+                        Log.e(TAG, "Response Body :"+response.body().data.get(0).avater);
+                        Log.e(TAG, "Response Body :"+response.body().data.get(0).first_name );
                        /* ArrayList<ModelClass.data>data = response.body().getData;*/
 
-                        if (!response.isSuccessful()){
+                        if (response.isSuccessful()){
                             textView.setText(""+response.code());
                             return;
                         }
 
-                        ArrayList<ModelClass.data> data = response.body().getData();
+                      /*  ArrayList<ModelClass.data> data = response.body().getData();
 
                         for (ModelClass.data data1 : data){
                             //Log.e(TAG, "Response Name :"+data1.getFirst_name());
@@ -63,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                         }
-
+*/
 
                     }
 
